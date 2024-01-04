@@ -37,7 +37,7 @@ module Choices
       YAML::ENGINE.yamler = 'syck'
     end
     begin
-      YAML.safe_load(content, aliases: true)
+      YAML.safe_load(content, aliases: true, permitted_classes: [Symbol])
     ensure
       YAML::ENGINE.yamler = old_yamler if defined?(YAML::ENGINE) && defined?(Syck)
     end
