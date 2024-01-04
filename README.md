@@ -1,3 +1,8 @@
+**NOTE FOR ACCLAIM:** This is only meant to get us past the Psych 5 update on our way to Rails 7.1. 
+The old settings.yml way of config should be going away before the end of Q1 2024 and at that point 
+this can be removed from the acclaim-server gemfile and this repo should be removed.
+
+
 Choices for Rails
 =================
 
