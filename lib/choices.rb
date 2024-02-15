@@ -24,7 +24,7 @@ module Choices
   
   def with_local_settings(filename, suffix)
     local_filename = filename.sub(/(\.\w+)?$/, "#{suffix}\\1")
-    if File.exists? local_filename
+    if File.exist? local_filename
       Logger.new(STDOUT).warn("Using settings.local.yml is deprecated and will be removed. Please migrate to .env.")
       hash = load_settings_hash(local_filename)
       yield hash if hash
