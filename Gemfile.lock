@@ -1,0 +1,24 @@
+PATH
+  remote: .
+  specs:
+    choices (0.4.0)
+      hashie (>= 0.4.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    hashie (5.0.0)
+    minitest (5.0.8)
+    rake (13.1.0)
+
+PLATFORMS
+  ruby
+  x86_64-darwin-23
+
+DEPENDENCIES
+  choices!
+  minitest (~> 5.0.6)
+  rake
+
+BUNDLED WITH
+   2.5.6
